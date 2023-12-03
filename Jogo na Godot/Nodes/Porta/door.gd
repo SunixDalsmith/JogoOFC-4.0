@@ -13,9 +13,10 @@ func _input(event):
 			elif estate == "close": #fecha
 				animation.play("Close_Door")
 				estate = "open"
-				
+
+
 
 func process(delta):
 	_input(0)
-	
+
 

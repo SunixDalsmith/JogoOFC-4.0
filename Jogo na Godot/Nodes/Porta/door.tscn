@@ -1,9 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://ds4fmjga6homc"]
+[gd_scene load_steps=11 format=3 uid="uid://ds4fmjga6homc"]
 
 [ext_resource type="Script" path="res://Nodes/Porta/door.gd" id="1_4iqq0"]
 [ext_resource type="Texture2D" uid="uid://eixfhqjhm7k2" path="res://Assets/Door/image.png" id="1_c631r"]
-[ext_resource type="AudioStream" uid="uid://4vhkjxj35myr" path="res://Sounds/OpenDoor.wav" id="3_lsj00"]
-[ext_resource type="AudioStream" uid="uid://bk2ykpppg6odj" path="res://Sounds/CloseDoor.wav" id="4_vloc1"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e5frb"]
 
@@ -52,30 +50,6 @@ tracks/3/path = NodePath("Fechada:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("AnimationDoor/Open Door:playing")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("AnimationDoor/Close Door:playing")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -134,18 +108,6 @@ tracks/3/keys = {
 "update": 1,
 "values": [true, true, false]
 }
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("AnimationDoor/Close Door:playing")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
 
 [sub_resource type="Animation" id="Animation_vvc5p"]
 resource_name = "Open_Door"
@@ -199,18 +161,6 @@ tracks/3/keys = {
 "update": 1,
 "values": [false, true, true]
 }
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("AnimationDoor/Open Door:playing")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_52ej3"]
 _data = {
@@ -242,12 +192,6 @@ hframes = 3
 libraries = {
 "": SubResource("AnimationLibrary_52ej3")
 }
-
-[node name="Open Door" type="AudioStreamPlayer2D" parent="AnimationDoor"]
-stream = ExtResource("3_lsj00")
-
-[node name="Close Door" type="AudioStreamPlayer2D" parent="AnimationDoor"]
-stream = ExtResource("4_vloc1")
 
 [node name="Aberta" type="CollisionShape2D" parent="."]
 position = Vector2(134.5, 64.5)
