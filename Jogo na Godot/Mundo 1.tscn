@@ -107,10 +107,15 @@ sources/0 = SubResource("TileSetAtlasSource_w6e0d")
 [sub_resource type="GDScript" id="GDScript_4c4fe"]
 script/source = "extends TileMap
 @onready var animation = $AnimationPlayer
-
+var count = true;
 func _update():
 	if  Input.is_action_pressed(\"Door\"):
-		animation.play(\"Open_Door\")
+		if count == true:
+			animation.play(\"Open_Door\")
+			count = false
+		elif count == false:
+			animation.play(\"Close_Door\")
+			count = true
 	pass
 # Called when the node enters the scene tree for the first time.
 func _ready():
