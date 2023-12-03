@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bi8755mcm28p3"]
+[gd_scene load_steps=5 format=3 uid="uid://ds4fmjga6homc"]
 
 [ext_resource type="Texture2D" uid="uid://eixfhqjhm7k2" path="res://Assets/Door/image.png" id="1_c631r"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e5frb"]
+
 [sub_resource type="GDScript" id="GDScript_882p3"]
-script/source = "extends TileMap
+script/source = "extends StaticBody2D
 
 @onready var animation = $AnimationDoor #importar a animacao da porta
 var estate = \"open\" #fechar ou abrir a porta
@@ -24,69 +26,23 @@ func process(delta):
 	_input(0)
 "
 
-[sub_resource type="Animation" id="Animation_iq8sa"]
-resource_name = "Close_Door"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SpriteDoor:frame_coords")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [Vector2i(2, 0), Vector2i(1, 0), Vector2i(0, 0)]
-}
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_p1iy3"]
 
-[sub_resource type="Animation" id="Animation_683xh"]
-resource_name = "Open_Door"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SpriteDoor:frame_coords")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_bkuy4"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SpriteDoor:frame_coords")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [Vector2i(0, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ll675"]
-_data = {
-"Close_Door": SubResource("Animation_iq8sa"),
-"Open_Door": SubResource("Animation_683xh"),
-"RESET": SubResource("Animation_bkuy4")
-}
-
-[node name="Door" type="TileMap"]
+[node name="Door" type="StaticBody2D"]
 texture_filter = 1
-format = 2
+physics_material_override = SubResource("PhysicsMaterial_e5frb")
 script = SubResource("GDScript_882p3")
 
 [node name="SpriteDoor" type="Sprite2D" parent="."]
-position = Vector2(163, 84)
+position = Vector2(131, 69)
 texture = ExtResource("1_c631r")
 hframes = 3
+frame = 2
 
-[node name="AnimationDoor" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_ll675")
-}
+[node name="AnimationDoor" type="AnimatableBody2D" parent="."]
+scale = Vector2(1.06105, 1.10547)
+physics_material_override = SubResource("PhysicsMaterial_p1iy3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimationDoor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
