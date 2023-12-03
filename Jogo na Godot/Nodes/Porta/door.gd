@@ -2,8 +2,6 @@ extends StaticBody2D
 
 @onready var animation = $AnimationDoor #importar a animacao da porta
 var estate = "open" #fechar ou abrir a porta
-
-#
 func _input(event):
 	if event is InputEventKey and event.pressed:
 		if event.keycode == KEY_E: #se a tecla e for precionada

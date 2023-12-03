@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://c00olccp1fnqx"]
 
 [ext_resource type="Script" path="res://Nodes/Jogador/jogador.gd" id="1_m20tg"]
-[ext_resource type="Texture2D" uid="uid://bpv6xbxl7nw7q" path="res://Assets/Jogador/player.png" id="2_i1oof"]
+[ext_resource type="Texture2D" uid="uid://bpv6xbxl7nw7q" path="res://assets/Jogador/player.png" id="2_i1oof"]
 
 [sub_resource type="Animation" id="Animation_if1dq"]
 length = 0.95
@@ -118,7 +118,7 @@ texture = ExtResource("2_i1oof")
 offset = Vector2(0, -9)
 hframes = 6
 vframes = 4
-frame = 20
+frame = 18
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
