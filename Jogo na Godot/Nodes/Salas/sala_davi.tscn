@@ -1,19 +1,19 @@
-[gd_scene load_steps=10 format=3 uid="uid://dac1b8myel206"]
+[gd_scene load_steps=10 format=3 uid="uid://ceyfppbnbe7wk"]
 
-[ext_resource type="PackedScene" uid="uid://c00olccp1fnqx" path="res://Nodes/Jogador/jogador.tscn" id="1_x5g5e"]
-[ext_resource type="Texture2D" uid="uid://dgttg3flea66e" path="res://Assets/tiles/carpete.png" id="2_27bvi"]
-[ext_resource type="Texture2D" uid="uid://8jsj06xxpdvf" path="res://Assets/wall/parede.png" id="2_35x1y"]
-[ext_resource type="PackedScene" uid="uid://ds4fmjga6homc" path="res://Nodes/Porta/door.tscn" id="4_jynj3"]
+[ext_resource type="Texture2D" uid="uid://dgttg3flea66e" path="res://Assets/tiles/carpete.png" id="1_letel"]
+[ext_resource type="Texture2D" uid="uid://8jsj06xxpdvf" path="res://Assets/wall/parede.png" id="2_awx2j"]
+[ext_resource type="PackedScene" uid="uid://c00olccp1fnqx" path="res://Nodes/Jogador/jogador.tscn" id="3_ltsg4"]
+[ext_resource type="PackedScene" uid="uid://ds4fmjga6homc" path="res://Nodes/Porta/door.tscn" id="4_h5vl1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jrf4w"]
-texture = ExtResource("2_27bvi")
+texture = ExtResource("1_letel")
 0:0/next_alternative_id = 6
 0:0/0 = 0
 0:0/4 = 4
 0:0/4/flip_h = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tsdgo"]
-texture = ExtResource("2_35x1y")
+texture = ExtResource("2_awx2j")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -35,7 +35,7 @@ sources/0 = SubResource("TileSetAtlasSource_jrf4w")
 sources/1 = SubResource("TileSetAtlasSource_tsdgo")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w6e0d"]
-texture = ExtResource("2_35x1y")
+texture = ExtResource("2_awx2j")
 0:0/0 = 0
 0:0/0/z_index = 1
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -104,7 +104,7 @@ texture = ExtResource("2_35x1y")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_w6e0d")
 
-[node name="Testes" type="Node2D"]
+[node name="Sala Davi" type="Node2D"]
 y_sort_enabled = true
 
 [node name="ground" type="TileMap" parent="."]
@@ -123,7 +123,7 @@ layer_0/y_sort_enabled = true
 layer_0/z_index = 2
 layer_0/tile_data = PackedInt32Array(589834, 0, 3, 655370, 0, 4, 589835, 65536, 3, 655371, 65536, 4, 589836, 65536, 3, 655372, 65536, 4, 655373, 131072, 4, 589837, 131072, 3, 524298, 0, 2, 524299, 65536, 2, 524300, 65536, 2, 524301, 131072, 2, 65552, 0, 0, 131088, 0, 2, 196624, 0, 3, 262160, 0, 4, 65553, 131072, 0, 131089, 131072, 2, 196625, 131072, 3, 262161, 131072, 4, 196612, 65536, 1, 262148, 65536, 2, 327684, 65536, 3, 393220, 65536, 4, 196613, 131072, 1, 262149, 131072, 2, 327685, 131072, 3, 393221, 131072, 4, 131075, 0, 0, 196611, 0, 1, 262147, 0, 2, 327683, 0, 3, 393219, 0, 4, 131076, 65536, 0, 131077, 131072, 0, 458762, 0, 1, 393226, 0, 1, 327690, 0, 0, 327691, 65536, 0, 327692, 65536, 0, 327693, 131072, 0, 393229, 131072, 1, 458765, 131072, 1, 393227, 65536, 1, 458764, 65536, 1, 393228, 65536, 1, 458763, 65536, 1)
 
-[node name="Player" parent="." instance=ExtResource("1_x5g5e")]
+[node name="Player" parent="." instance=ExtResource("3_ltsg4")]
 top_level = true
 z_index = 3
 z_as_relative = false
@@ -131,5 +131,5 @@ y_sort_enabled = false
 position = Vector2(555, 311)
 slide_on_ceiling = false
 
-[node name="Door" parent="." instance=ExtResource("4_jynj3")]
+[node name="Door" parent="." instance=ExtResource("4_h5vl1")]
 disable_mode = 2
