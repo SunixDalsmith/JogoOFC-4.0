@@ -1,6 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://dac1b8myel206"]
 
 [ext_resource type="PackedScene" uid="uid://c00olccp1fnqx" path="res://Nodes/Jogador/jogador.tscn" id="1_x5g5e"]
+<<<<<<< HEAD
+=======
+[ext_resource type="Texture2D" uid="uid://dgttg3flea66e" path="res://assets/tiles/carpete.png" id="2_27bvi"]
+[ext_resource type="Texture2D" uid="uid://8jsj06xxpdvf" path="res://assets/wall/parede.png" id="2_35x1y"]
+>>>>>>> 7a3407e24ca3209cd0ff018930ee9ad671cfb1ba
 [ext_resource type="PackedScene" uid="uid://ds4fmjga6homc" path="res://Nodes/Porta/door.tscn" id="4_jynj3"]
 
 [sub_resource type="TileSet" id="TileSet_qfyfg"]
