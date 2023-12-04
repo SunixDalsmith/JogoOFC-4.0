@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8jsj06xxpdvf"
-path="res://.godot/imported/parede.png-216012a883ab5214e85d0a9f37ac4471.ctex"
+uid="uid://d0uv75bvwiqkx"
+path="res://.godot/imported/porta gostosa novnha.png-652d707b02c9b80b19636537d620c1f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/wall/parede.png"
-dest_files=["res://.godot/imported/parede.png-216012a883ab5214e85d0a9f37ac4471.ctex"]
+source_file="res://assets/Door/porta gostosa novnha.png"
+dest_files=["res://.godot/imported/porta gostosa novnha.png-652d707b02c9b80b19636537d620c1f0.ctex"]
 
 [params]
 
