@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://ds4fmjga6homc"]
 
 [ext_resource type="Script" path="res://Nodes/Porta/door.gd" id="1_4iqq0"]
-[ext_resource type="Texture2D" uid="uid://eixfhqjhm7k2" path="res://Assets/Door/image.png" id="1_c631r"]
+[ext_resource type="Texture2D" uid="uid://eixfhqjhm7k2" path="res://assets/Door/image.png" id="1_c631r"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e5frb"]
 
@@ -206,6 +206,7 @@ size = Vector2(8, 17)
 size = Vector2(8, 18)
 
 [node name="Door" type="StaticBody2D"]
+z_as_relative = false
 texture_filter = 1
 physics_material_override = SubResource("PhysicsMaterial_e5frb")
 script = ExtResource("1_4iqq0")

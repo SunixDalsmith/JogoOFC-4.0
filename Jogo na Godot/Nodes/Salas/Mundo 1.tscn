@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://dac1b8myel206"]
 
 [ext_resource type="PackedScene" uid="uid://c00olccp1fnqx" path="res://Nodes/Jogador/jogador.tscn" id="1_x5g5e"]
-[ext_resource type="Texture2D" uid="uid://dgttg3flea66e" path="res://Assets/tiles/carpete.png" id="2_27bvi"]
-[ext_resource type="Texture2D" uid="uid://8jsj06xxpdvf" path="res://Assets/wall/parede.png" id="2_35x1y"]
+[ext_resource type="Texture2D" uid="uid://dgttg3flea66e" path="res://assets/tiles/carpete.png" id="2_27bvi"]
+[ext_resource type="Texture2D" uid="uid://8jsj06xxpdvf" path="res://assets/wall/parede.png" id="2_35x1y"]
 [ext_resource type="PackedScene" uid="uid://ds4fmjga6homc" path="res://Nodes/Porta/door.tscn" id="4_jynj3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jrf4w"]
