@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://ds4fmjga6homc"]
 
 [ext_resource type="Script" path="res://Nodes/Porta/door.gd" id="1_4iqq0"]
-[ext_resource type="Texture2D" uid="uid://eixfhqjhm7k2" path="res://assets/Door/image.png" id="1_c631r"]
+[ext_resource type="Texture2D" uid="uid://d0uv75bvwiqkx" path="res://assets/Door/porta gostosa novnha.png" id="2_dw0wb"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e5frb"]
 
@@ -213,7 +213,7 @@ script = ExtResource("1_4iqq0")
 
 [node name="SpriteDoor" type="Sprite2D" parent="."]
 position = Vector2(131, 69)
-texture = ExtResource("1_c631r")
+texture = ExtResource("2_dw0wb")
 hframes = 3
 
 [node name="AnimationDoor" type="AnimationPlayer" parent="."]
