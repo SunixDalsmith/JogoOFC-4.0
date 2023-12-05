@@ -1,7 +1,10 @@
-[gd_scene format=3 uid="uid://djxr5rd56tdfc"]
+[gd_scene load_steps=2 format=3 uid="uid://djxr5rd56tdfc"]
 
-[node name="Camera" type="Camera2D"]
+[ext_resource type="Script" path="res://Nodes/Camera/FollowCam.gd" id="1_7h6au"]
+
+[node name="Follow Cam" type="Camera2D"]
 position = Vector2(-2, 0)
 zoom = Vector2(5, 5)
 editor_draw_limits = true
 editor_draw_drag_margin = true
+script = ExtResource("1_7h6au")

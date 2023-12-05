@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0uv75bvwiqkx"
-path="res://.godot/imported/porta gostosa novnha.png-652d707b02c9b80b19636537d620c1f0.ctex"
+path="res://.godot/imported/porta gostosa novnha.png-c8d67c8a0fb839f845a87fb6615388f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Door/porta gostosa novnha.png"
-dest_files=["res://.godot/imported/porta gostosa novnha.png-652d707b02c9b80b19636537d620c1f0.ctex"]
+source_file="res://Assets/Door/porta gostosa novnha.png"
+dest_files=["res://.godot/imported/porta gostosa novnha.png-c8d67c8a0fb839f845a87fb6615388f6.ctex"]
 
 [params]
 
