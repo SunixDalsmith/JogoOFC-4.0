@@ -1,19 +1,22 @@
 extends Camera2D
 
-@export var tilemap: TileMap
-@export var camPosition: Camera2D
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	var mapRect = tilemap.get_used_rect()
-	var tileSize = tilemap.cell_quadrant_size
-	var wordSizeInPixels = mapRect.size * tileSize
-	limit_right = wordSizeInPixels.x
-	limit_bottom = wordSizeInPixels.y
-	limit_left = ((wordSizeInPixels.y) *-1)
-	limit_top = ((wordSizeInPixels.x) *-1)
-	
-	var a = camPosition.position.x 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+var collision_shape2d
+
+func _ready():
+	collision_shape2d = get_node("Area do mapa")
+	var bounds = collision_shape2d.shape.get_rect()
+	limit_left = (bounds.position.x) + collision_shape2d.global_position.x
+	limit_right = (bounds.position.x + bounds.size.x) + collision_shape2d.global_position.x
+	limit_top = (bounds.position.y) + collision_shape2d.global_position.y
+	limit_bottom = (bounds.position.y + bounds.size.y) + collision_shape2d.global_position.y
+	
+	
+	print("limit_left ", limit_left)
+	print("limit_right ", limit_right)
+	print("limit_top ", limit_top)
+	print("limit_bottom ", limit_bottom)
+	print("aaa",  collision_shape2d.global_position)
+	
 func _process(delta):
 	pass

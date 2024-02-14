@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuyjrt2vds70e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ikyk"]
+size = Vector2(145, 79)
+
+[node name="Limite visão" type="CollisionShape2D"]
+position = Vector2(620.5, 319.5)
+shape = SubResource("RectangleShape2D_8ikyk")
+debug_color = Color(0.380392, 0.603922, 0.333333, 0)

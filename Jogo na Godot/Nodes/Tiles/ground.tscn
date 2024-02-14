@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cdqpp2x7fsiks" path="res://Assets/tiles/carpete2.0.png" id="1_q3g35"]
 [ext_resource type="Texture2D" uid="uid://b05pxk21c3c68" path="res://Assets/tiles/purple.png" id="2_71gcy"]
 [ext_resource type="Texture2D" uid="uid://bjs8gosynr36v" path="res://Assets/tiles/xadrez.png" id="3_acfcn"]
-[ext_resource type="PackedScene" uid="uid://c00olccp1fnqx" path="res://Nodes/Jogador/jogador.tscn" id="4_7hmsl"]
+[ext_resource type="PackedScene" uid="uid://c0kowtd6360j8" path="res://Nodes/Jogador/jogador.tscn" id="4_7hmsl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nt3c4"]
 texture = ExtResource("1_q3g35")
@@ -38,10 +38,10 @@ layer_0/tile_data = PackedInt32Array(393216, 4, 0, 458752, 4, 0, 524288, 4, 0, 5
 position = Vector2(790, 306)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-445, -202)
+position = Vector2(-496, -713)
 zoom = Vector2(5, 5)
-limit_left = 0
-limit_top = 0
+limit_left = -720
+limit_top = -1280
 limit_right = 1280
 limit_bottom = 720
 limit_smoothed = true

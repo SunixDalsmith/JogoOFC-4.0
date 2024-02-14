@@ -1,6 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://c00olccp1fnqx"]
+[gd_scene load_steps=10 format=3 uid="uid://c0kowtd6360j8"]
 
-[ext_resource type="Script" path="res://Nodes/Jogador/jogador.gd" id="1_m20tg"]
+[ext_resource type="Script" path="res://Nodes/Salas/jogador.gd" id="1_5or15"]
 [ext_resource type="Texture2D" uid="uid://bpv6xbxl7nw7q" path="res://Assets/Jogador/player.png" id="2_i1oof"]
 
 [sub_resource type="Animation" id="Animation_if1dq"]
@@ -108,12 +108,12 @@ size = Vector2(6, 4)
 z_index = 1
 y_sort_enabled = true
 texture_filter = 1
-position = Vector2(621, 299)
-script = ExtResource("1_m20tg")
+position = Vector2(614, 304)
+script = ExtResource("1_5or15")
 
 [node name="Sprite Player" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(-446, -195)
+position = Vector2(0, 3)
 texture = ExtResource("2_i1oof")
 offset = Vector2(0, -9)
 hframes = 6
@@ -126,5 +126,4 @@ libraries = {
 }
 
 [node name="CollisionShapePlayer" type="CollisionShape2D" parent="."]
-position = Vector2(-446, -197)
 shape = SubResource("RectangleShape2D_6o1vb")
