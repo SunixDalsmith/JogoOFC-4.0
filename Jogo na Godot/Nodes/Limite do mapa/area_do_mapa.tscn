@@ -1,7 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://bifu35tjkuoch"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wsn7g"]
-size = Vector2(320, 192)
+size = Vector2(244, 229)
 
 [node name="Area do mapa" type="CollisionShape2D"]
 position = Vector2(676, 316)
